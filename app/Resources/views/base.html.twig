@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TZ</title>
+
+    {% block scripts %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" async src="{{ asset('js/common.js?%s') | format(random(998)) }}"></script>
+    {% endblock %}
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css?%s') | format(random(998)) }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>

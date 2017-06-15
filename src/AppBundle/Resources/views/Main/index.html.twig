@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="header"><!-- header -->
+        <div class="inner">
+            <div class="logo">
+                <img src="/img/logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="form_wrapper"><!-- form -->
+        <div class="inner">
+            <div class="envelop_wrp">
+                <img src="/img/envelop.png">
+            </div>
+
+            {% form_theme form 'AppBundle:Form:form.html.twig' %}
+            {{ form_start(form) }}
+            <div class="left_form_wrapper">
+                {{ form_row(form.owner) }}
+                {{ form_row(form.email) }}
+            </div>
+            <div class="right_form_wrapper">
+                {{ form_row(form.msg) }}
+            </div>
+            <div class="submit_wrapper">
+                {{ form_row(form.save) }}
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+    <div class="comments_wrapper"><!-- comments -->
+
+        <h2>Выводим комментарии</h2>
+
+        <ul class="comment_list" id="comments">
+            {% for comment in comments %}
+                <li data-comment-id="{{ comment.id }}">
+                    <div class="wrapper">
+                        <div class="hide">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="owner">
+                            <div class="remove_current" onclick="cmt.remove(this)">
+                                <img src="/img/close_white.gif">
+                            </div>
+                            <span class="name">{{ comment.owner }}</span>
+                        </div>
+                        <div class="owner_mail">
+                            <span>{{ comment.email }}</span>
+                        </div>
+                        <div class="msg">{{ comment.msg }}</div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <div class="footer">
+        <div class="inner">
+            <div class="logo">
+                <img src="/img/logo.png">
+            </div>
+            <ul class="social_list">
+                <li><a href=""><img src="/img/vk.png"></a></li>
+                <li><a href=""><img src="/img/facebook.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
