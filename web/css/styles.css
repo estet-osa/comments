@@ -4,6 +4,78 @@
 }
 li{list-style-type: none}
 
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/roboto/Robotothin.woff2') format('woff2'), url('../fonts/roboto/Robotothin.woff') format('woff'), url('../fonts/roboto/Robotothin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('../fonts/roboto/Robotothinitalic.woff2') format('woff2'), url('../fonts/roboto/Robotothinitalic.woff') format('woff'), url('../fonts/roboto/Robotothinitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/roboto/Robotolight.woff2') format('woff2'), url('../fonts/roboto/Robotolight.woff') format('woff'), url('../fonts/roboto/Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('../fonts/roboto/Robotolightitalic.woff2') format('woff2'), url('../fonts/roboto/Robotolightitalic.woff') format('woff'), url('../fonts/roboto/Robotolightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto/Roboto.woff2') format('woff2'), url('../fonts/roboto/Roboto.woff') format('woff'), url('../fonts/roboto/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'), url('../fonts/roboto/Robotoitalic.woff2') format('woff2'), url('../fonts/roboto/Robotoitalic.woff') format('woff'), url('../fonts/roboto/Robotoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/roboto/Robotomedium.woff2') format('woff2'), url('../fonts/roboto/Robotomedium.woff') format('woff'), url('../fonts/roboto/Robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('../fonts/roboto/Robotomediumitalic.woff2') format('woff2'), url('../fonts/roboto/Robotomediumitalic.woff') format('woff'), url('../fonts/roboto/Robotomediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto/Robotobold.woff2') format('woff2'), url('../fonts/roboto/Robotobold.woff') format('woff'), url('../fonts/roboto/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('../fonts/roboto/Robotobolditalic.woff2') format('woff2'), url('../fonts/roboto/Robotobolditalic.woff') format('woff'), url('../fonts/roboto/Robotobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'), url('../fonts/roboto/Robotoblack.woff2') format('woff2'), url('../fonts/roboto/Robotoblack.woff') format('woff'), url('../fonts/roboto/Robotoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('../fonts/roboto/Robotoblackitalic.woff2') format('woff2'), url('../fonts/roboto/Robotoblackitalic.woff') format('woff'), url('../fonts/roboto/Robotoblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
 body{
     overflow-y: scroll;
     font-family: Roboto, Tahoma, sans-serif;
@@ -14,15 +86,15 @@ table, td, th{
     border-collapse: collapse
 }
 
-::-webkit-input-placeholder {color: #888;}
-::-moz-placeholder          {color: #888;}
-:-moz-placeholder           {color: #888;}
-:-ms-input-placeholder      {color: #888;}
+::-webkit-input-placeholder {color: #888}
+::-moz-placeholder          {color: #888}
+:-moz-placeholder           {color: #888}
+:-ms-input-placeholder      {color: #888}
 
-input:focus::-webkit-input-placeholder {color: transparent;}
-input:focus::-moz-placeholder          {color: transparent;}
-input:focus:-moz-placeholder           {color: transparent;}
-input:focus:-ms-input-placeholder      {color: transparent;}
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+input:focus:-moz-placeholder           {color: transparent}
+input:focus:-ms-input-placeholder      {color: transparent}
 
 /*=== header ===*/
 .header{
@@ -33,6 +105,7 @@ input:focus:-ms-input-placeholder      {color: transparent;}
 .header > .inner{
     max-width: 850px;
     min-height: 100px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .header .logo{
@@ -52,6 +125,7 @@ input:focus:-ms-input-placeholder      {color: transparent;}
     max-width: 850px;
     min-height: 250px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .form_wrapper > .inner .envelop_wrp{
     width: 190px;
@@ -226,7 +300,8 @@ ul.comment_list > li > .wrapper  > .owner_mail{
     overflow: hidden;
 }
 ul.comment_list > li > .wrapper > .owner_mail > span{
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 20px;
     font-weight: 600;
     color: #6D727A;
 }
@@ -312,7 +387,7 @@ ul.comment_list > li.active .owner > .remove_current{
 }
 .footer > .inner{
     max-width: 850px;
-    padding: 30px 0 20px;
+    padding: 30px 20px 20px 20px;
     margin: 0 auto;
 }
 .footer > .inner:after{
@@ -329,6 +404,11 @@ ul.comment_list > li.active .owner > .remove_current{
 ul.social_list{
     float: right;
 }
+ul.social_list:after{
+    content: '';
+    clear: both;
+    float: none;
+}
 ul.social_list > li{
     float: left;
     margin: 5px 10px;
@@ -339,3 +419,91 @@ ul.social_list > li img{
     width: 35px;
 }
 ul.social_list > li:hover{opacity: 1}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (850px) ===*/
+@media screen and (max-width: 850px){
+    ul.comment_list{
+        width: 80%;
+        margin: 0 auto;
+    }
+    ul.comment_list > li{
+        width: 45%;
+        margin: 0 2.5% 40px 2.5%;
+    }
+}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (850px) ===*/
+@media screen and (max-width: 750px){
+    ul.comment_list{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (700px) ===*/
+@media screen and (max-width: 700px){
+    .form_wrapper .left_form_wrapper{
+        float: none;
+        width: 80%;
+        margin: 20px auto;
+    }
+    .form_wrapper .right_form_wrapper{
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .submit_wrapper{
+        width: 80%;
+        padding: 40px 0 60px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (600px) ===*/
+@media screen and (max-width: 600px){
+    ul.comment_list > li{
+        width: 60%;
+        margin: 40px auto;
+        float: none;
+    }
+}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (500px) ===*/
+@media screen and (max-width: 500px){
+    .header .logo{margin: 0 auto}
+
+    ul.comment_list > li{width: 70%}
+
+    .form_wrapper .left_form_wrapper{
+        float: none;
+        width: 95%;
+        margin: 20px auto;
+    }
+    .form_wrapper .right_form_wrapper{
+        float: none;
+        width: 95%;
+    }
+    .submit_wrapper{width: 95%}
+}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (400px) ===*/
+@media screen and (max-width: 400px){
+    ul.comment_list > li{width: 80%}
+
+    .footer > .inner > .logo{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    ul.social_list{
+        width: 120px;
+        float: none;
+        margin: 15px auto;
+    }
+}
+
+/*=== MEDIA SCRIN WITH RESOLUTION (355px) ===*/
+@media screen and (max-width: 355px){
+    ul.comment_list > li{width: 90%}
+}

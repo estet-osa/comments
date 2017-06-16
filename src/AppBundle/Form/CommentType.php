@@ -36,8 +36,9 @@ class CommentType extends AbstractType
                 )
             ])
             ->add('save', SubmitType::class, [
+                'label'     => 'Записать',
                 'attr'      => array(
-                    'class' => 'save_btn'
+                    'class' => 'save_btn',
                 )
             ])
         ;
